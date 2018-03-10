@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Carrossel Home</title>
+  <link rel="icon" type="image/png" href="../img/bg.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../js/javascript.js"></script>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top background-menu">
+    <div class="container-fluid background-menu">
+      <div class="navbar-header background-menu">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html"><img class="toHome" src="../img/buttonB.png" height="40px"/></a>
+      </div>
+      <div class="collapse navbar-collapse background-menu" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="historia.html">História</a></li>
+          <li><a href="time.html">Time</a></li>
+          <li class="active"><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br><br><br>
+  <div class="container">
+      <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbzefo6PU7haMWe3wUiaEmW_SjM6x9q9MpUx3p2N6tFXMEXjww2r/exec">
+  <h2>Contato</h2>
+  <p>Deixe-nos uma mensagem!</p>
+
+      <div class="form-group">
+        <label for="name">Nome: </label>
+        <input class="form-control" id="name" name="name" placeholder="Seu nome" />
+      </div>
+      <div class="form-group">
+        <label for="message">Mensagem: </label>
+      <textarea class="form-control" id="message" name="message" rows="10"
+      placeholder="Deixe a sua mensagem "></textarea>
+      </div>
+      <div class="form-group">
+        <label for="email"><em>Seu</em> Endereço de Email:</label>
+        <input class="form-control" id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+      <span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary">
+      <i class=""></i>&nbsp;Send</button>
+      </div>
+    </form>
+    <div style="display:none;" id="thankyou_message">
+    <h2><em>Obrigado</em> pelo contato!
+      Entraremos em contato com você em breve!</h2>
+  </div>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="../js/form-submission-handler.js"></script>
+
+  <footer class="container-fluid text-center background-menu" >
+      <br />
+      <a onclick="scroll(0,0)" style="cursor: pointer;color:White;text-decoration:none;">
+        - Inicio -
+      </a>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+            <a href="https://www.facebook.com/carrosselcaipirabauru/?ref=bookmarks" target="_blank" class="socialAnchor">
+                <img src="../img/facebook.png" title="Facebook" class="logo" />
+            </a>
+
+            <a href="#" target="_blank" class="socialAnchor">
+                <img src="../img/youtube.png" title="Youtube" class="logo" />
+            </a>
+
+            <a href="https://github.com/CarrosselCaipira" target="_blank" class="socialAnchor">
+                <img src="../img/github.png" title="Github" class="git" />
+            </a>
+
+            <a href="#" target="_blank" class="socialAnchor">
+                <img src="../img/bitbucket.png" title="BitBucket" class="logo" />
+            </a>
+        </div>
+      </div>
+      <br />
+    </footer>
+</body>
+</html>
