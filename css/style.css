@@ -15,6 +15,7 @@ body {
     background-image: url("../img/bg3.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .container {
@@ -66,6 +67,10 @@ footer {
     padding-right: 5px;
 }
 
+p > .text-justify {
+    font-size: 30px;
+}
+
 
 .profile {
     border-bottom: 1px solid #ccc;
@@ -104,6 +109,10 @@ footer {
 
 .cardContent {
     display: none;
+}
+
+p[class="text-justify"] {
+    font-size: 16px;
 }
 
 
