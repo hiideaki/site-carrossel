@@ -108,20 +108,22 @@ footer {
 .post-thumbnail {
     width: 100%;
     padding: 10px;
-/*    border-radius: 20px;*/
+    border-radius: 20px;
+    transition: background-color .2s ease-out;
 }
 
-.post-thumbnail:hover h3{
-/*    background-color: rgba(8, 15, 31, 0.3);*/
-    color: #a04848;
+.post-thumbnail:hover {
+    background-color: rgba(8, 15, 31, 0.2);
+    
 }
 
 .post-link {
     color: #000;
     text-decoration: none !important;
+    margin-bottom: 15px;
 }
 
-.post-link:hover {
+.post-link:hover, .post-link:visited, .post-link:visited h3 {
     color: #000;
 }
 
@@ -130,11 +132,16 @@ footer {
     height: 50%;
 }
 
+textarea {
+    resize: none;  
+}
+
 @media only screen and (min-width: 768px) {
     .post-image {
         width: 50%;
         height: 25%;
     }
 }
+
 
 
