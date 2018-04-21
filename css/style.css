@@ -67,7 +67,7 @@ footer {
     padding-right: 5px;
 }
 
-.profile {
+.profile:not(:last-child) {
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -108,6 +108,7 @@ footer {
 .post-thumbnail {
     width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
     border-radius: 20px;
     transition: background-color .2s ease-out;
 }
@@ -120,7 +121,6 @@ footer {
 .post-link {
     color: #000;
     text-decoration: none !important;
-    margin-bottom: 15px;
 }
 
 .post-link:hover, .post-link:visited, .post-link:visited h3 {
